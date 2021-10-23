@@ -1,0 +1,12 @@
+let strip = neopixel.create(DigitalPin.P1, 30, NeoPixelMode.RGB_RGB)
+basic.forever(function () {
+    strip.showColor(neopixel.colors(NeoPixelColors.Red))
+    strip.show()
+    basic.pause(500)
+    strip.showColor(neopixel.colors(NeoPixelColors.Blue))
+    strip.show()
+    basic.pause(500)
+    strip.showColor(neopixel.colors(NeoPixelColors.Yellow))
+    strip.show()
+    basic.pause(500)
+})
